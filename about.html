@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><b>Jordan Gania</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="navbarDropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Follow
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="https://www.instagram.com">Instagram</a></li>
+                        <li><a class="dropdown-item" href="https://www.facebook.com">Facebook</a></li>
+                        <li><a class="dropdown-item" href="https://www.youtube.com">Youtube</a></li>
+                    </ul>
+                </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+        <p>Hello! I made this website to test our some functionality 
+            I have been learning in my front-end coding bootcamp. I am currently employeed by 
+            Alamo Drafthouse Cinema and thought this would be an incredible
+            opportunity to pair my love for movies into an introductory assignmenmt.   
+        </p>
+    </div>
+
+    <div>
+        <h1>Top 5 Lifetime Grosses</h1>
+        <table class="table table-dark table-hover">
+            <tr>
+                <th>#</th>
+                <th>Movie</th>
+                <th>Director</th>
+                <th>Distributor</th>
+                <th>Total Gross</th>
+            </tr>
+            <tr>
+                <td>#1</td>
+                <td>Avatar (2009)</td>
+                <td>James Cameron</td>
+                <td>Disney / 20th Centtury Studios</td>
+                <td>$2.847 Billion</td>
+            </tr>
+            <tr>
+                <td>#2</td>
+                <td>Avengers: Endgame (2019)</td>
+                <td>Anthony Russo</td>
+                <td>Disney / Marvel</td>
+                <td>$2.798 Billion</td>
+            </tr>
+            <tr>
+                <td>#3</td>
+                <td>Titanic (1997)</td>
+                <td>James Cameron</td>
+                <td>Paramount Pictures</td>
+                <td>$2.201 Billion</td>
+            </tr>
+            <tr>
+                <td>#4</td>
+                <td>Star Wars: Episode VII - The Force Awakens (2015)</td>
+                <td>J.J. Abrams</td>
+                <td>Disney / Lucas Films</td>
+                <td>$2.070 Billion</td>
+            </tr>
+            <tr>
+                <td>#5</td>
+                <td>Avengers: Infinity War (2018)</td>
+                <td>Anthony Russo</td>
+                <td>Disney / Marvel</td>
+                <td>$2.048 Billion</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h1>Contact Us</h1>
+    </div>
+    <div class="container">
+        <form action="action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+      
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+            <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+
+</body>
+</html>
